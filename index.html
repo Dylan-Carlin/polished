@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Custom websites crafted by a dedicated design & development team. Beautiful, responsive, and SEO-optimized.">
+  <title>Skyline Sites | Custom Web Design & Development</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    a { color: #0078d4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; height: auto; }
+
+    header {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    header h1 { margin: 0; font-size: 2.8rem; letter-spacing: 2px; }
+    header p { font-size: 1.2rem; margin-top: 8px; font-weight: 300; }
+
+    nav {
+      background: #023060;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover { background: #0166cc; }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+      box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.45);
+    }
+    .hero h2 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto; }
+
+    .services, .process, .testimonials, .contact {
+      padding: 60px 20px;
+      text-align: center;
+      background: white;
+    }
+    .services h3, .process h3, .testimonials h3, .contact h3 {
+      font-size: 2rem;
+      color: #004080;
+      margin-bottom: 30px;
+    }
+    .service-list, .steps {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .service-item, .step {
+      background: #e7f0ff;
+      padding: 25px;
+      border-radius: 10px;
+      flex: 1 1 280px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-item:hover, .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+    .service-item h4, .step h4 {
+      margin-top: 0;
+      color: #023060;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    .testimonial {
+      background: #f0f4fa;
+      padding: 25px;
+      margin: 10px auto;
+      border-radius: 10px;
+      max-width: 700px;
+      font-style: italic;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .testimonial strong {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #023060;
+      font-style: normal;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .contact a.button {
+      display: inline-block;
+      background: #0078d4;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+    .contact a.button:hover { background: #005ea2; }
+
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .service-list, .steps { flex-direction: column; }
+      .service-item, .step { flex: none; max-width: 100%; }
+      .hero h2 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Skyline Sites</h1>
+    <p>Custom Web Design & Development for Growing Brands</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#process">Our Process</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" role="img" aria-label="Workspace with computer and plants">
+    <div>
+      <h2>Bring Your Business Online with Confidence</h2>
+      <p>We build modern, fast, and responsive websites that help your brand stand out and grow.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h3>What We Offer</h3>
+    <div class="service-list">
+      <div class="service-item"><h4>Custom Website Design</h4><p>Tailored layouts and visuals crafted to reflect your brand’s story and identity.</p></div>
+      <div class="service-item"><h4>Mobile Optimization</h4><p>Your site will look and work great on all devices, big and small.</p></div>
+      <div class="service-item"><h4>SEO Foundations</h4><p>Structure, speed, and tags optimized to help Google find and rank your site.</p></div>
+      <div class="service-item"><h4>Hosting Setup</h4><p>Fast, secure, and reliable hosting so your site loads quickly and stays online.</p></div>
+      <div class="service-item"><h4>Ongoing Support</h4><p>Post-launch updates and maintenance to keep everything running smoothly.</p></div>
+    </div>
+  </section>
+
+  <section id="process" class="process">
+    <h3>Our Process</h3>
+    <div class="steps">
+      <div class="step"><h4>1. Discovery</h4><p>We discuss your goals, vision, and business needs in a 1:1 call or meeting.</p></div>
+      <div class="step"><h4>2. Design</h4><p>You receive mockups to review and refine until it feels right for your brand.</p></div>
+      <div class="step"><h4>3. Development</h4><p>We build your site with clean, responsive, and accessible code.</p></div>
+      <div class="step"><h4>4. Launch</h4><p>After final testing, your site goes live — fast, secure, and ready to impress.</p></div>
+      <div class="step"><h4>5. Support</h4><p>We're available for changes, fixes, and upgrades as your site evolves.</p></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonial">
+      “Skyline Sites made the process so easy. Our new site looks incredible and performs better than ever.”
+      <strong>– Kelly R., Coffee Shop Owner</strong>
+    </div>
+    <div class="testimonial">
+      “The design was beautiful, but more importantly, our traffic and engagement went up significantly.”
+      <strong>– Jordan M., Nonprofit Director</strong>
+    </div>
+    <div class="testimonial">
+      “Their communication, quality, and attention to detail blew us away. Highly recommended.”
+      <strong>– Lena G., Marketing Consultant</strong>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <p>Have a project in mind or just want to ask a question? We're here to help and ready to build.</p>
+    <a class="button" href="https://mail.google.com/mail/?view=cm&fs=1&to=skyline@example.com&su=Website%20Inquiry" target="_blank" rel="noopener noreferrer">Email Us</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Skyline Sites. Designed with care by our 3-person team.
+  </footer>
+
+</body>
+</html>
